@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="320.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cn.xanderye.controller.MainController">
+   <children>
+      <Label alignment="CENTER_RIGHT" layoutX="57.0" layoutY="32.0" prefHeight="30.0" prefWidth="65.0" text="groupId：" />
+      <Label alignment="CENTER_RIGHT" layoutX="57.0" layoutY="77.0" prefHeight="30.0" prefWidth="65.0" text="artifactId：" />
+      <Label alignment="CENTER_RIGHT" layoutX="57.0" layoutY="122.0" prefHeight="30.0" prefWidth="65.0" text="作者：" />
+      <Label alignment="CENTER_RIGHT" layoutX="57.0" layoutY="167.0" prefHeight="30.0" prefWidth="65.0" text="日期：" />
+      <Label alignment="CENTER_RIGHT" layoutX="57.0" layoutY="212.0" prefHeight="30.0" prefWidth="65.0" text="实体名：" />
+      <TextField fx:id="groupIdText" layoutX="157.0" layoutY="32.0" prefHeight="30.0" />
+      <TextField fx:id="artifactIdText" layoutX="157.0" layoutY="77.0" prefHeight="30.0" />
+      <TextField fx:id="authorText" layoutX="157.0" layoutY="122.0" prefHeight="30.0" />
+      <TextField fx:id="dateText" layoutX="157.0" layoutY="167.0" prefHeight="30.0" />
+      <TextField fx:id="nameText" layoutX="157.0" layoutY="212.0" prefHeight="30.0" />
+      <Button fx:id="generateBtn" layoutX="253.0" layoutY="262.0" mnemonicParsing="false" onAction="#startGenerate" prefHeight="30.0" prefWidth="65.0" text="生成" />
+      <CheckBox fx:id="baseCheckBox" layoutX="155.0" layoutY="264.0" mnemonicParsing="false" prefHeight="25.0" selected="true" text="生成base包" />
+   </children>
+</AnchorPane>
