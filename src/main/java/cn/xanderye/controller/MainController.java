@@ -69,5 +69,6 @@ public class MainController implements Initializable {
                 Platform.runLater(() -> JavaFxUtil.errorDialog("错误", "生成失败"));
             }
         });
+        executorService.shutdown();
     }
 }
