@@ -49,7 +49,7 @@ public class MainController implements Initializable {
         generateBtn.setDisable(true);
         ExecutorService executorService = Executors.newSingleThreadExecutor();
         executorService.execute(() -> {
-            log.info("groupId: {}, artifactId: {}, 作者: {}, 日期: {}", groupId, artifactId, artifactId, date);
+            log.info("groupId: {}, artifactId: {}, 作者: {}, 日期: {}", groupId, artifactId, author, date);
             String targetPath = System.getProperty("user.dir");
             log.info("生成路径：{}", targetPath);
             try {
